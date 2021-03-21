@@ -7,7 +7,6 @@ const App = {
             myInputValue: "",
             notes: [],
             readyNotes: [],
-            readyNotesCounter: 0,
         }
     },
     methods: {

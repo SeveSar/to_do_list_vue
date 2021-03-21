@@ -174,3 +174,24 @@ h3 {
 .ready-note {
   text-decoration: line-through;
 }
+
+@media(max-width: 575px) {
+  .btn {
+    margin: 0;
+    width: auto;
+    font-size: 10px;
+  }
+  .btn + .btn {
+    margin-top: 10px;
+  }
+  h2,h1,h3 {
+    font-size: 1rem;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .list-item {
+    font-size: 0.9rem;
+  }
+}
