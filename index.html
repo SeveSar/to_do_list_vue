@@ -17,13 +17,11 @@
   <div class="container" id="app" v-cloak>
     <div class="card">
       <h1 :style="{
-        color: myInputValue.length > 5 ? 'red' : 'black',
-        fontSize: myInputValue.length > 5 ? '45px' : '25px'
+        color: myInputValue.length > 5 ? 'red' : 'black'
       }">{{title}}</h1>
       <div class="form-control">
         <input type="text" v-model="myInputValue" :placeholder="myPlaseholder" v-on:keypress.enter="addNewNotes">
       </div>
-      <h2>inputValue: {{myInputValue}}</h2>
       <button @click="addNewNotes" class="btn">Добавить</button>
       <hr>
       <div v-if="notes.length !== 0 || readyNotes.length !== 0">
